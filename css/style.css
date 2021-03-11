@@ -24,6 +24,10 @@ img{
   max-width: 100%;
   height: auto;
 }
+a{
+  color: inherit;
+  text-decoration: none;
+}
 /* 로고 */
 .brand{
   display: flex;
@@ -101,6 +105,10 @@ img{
   background: #03c75a;
   color: #fff;
 }
+/* 링크 텍스트 - a */
+.ip-security a{
+  color: #333
+}
 @media screen and (min-width: 769px){
   .brand{
     padding: 106px 0 53px;
@@ -113,7 +121,7 @@ img{
   .login-form fieldset{
     width: 460px;
   }
-  .ip-security{
+  .ip-security{    
     display: flex;
     justify-content: flex-end;
   }
