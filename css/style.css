@@ -63,7 +63,6 @@ a{
   margin-bottom: 14px;
 }
 .ip-security{
-  background-color: aqua;
   width: 50%;
   order: 1;
   display: none;
@@ -108,6 +107,29 @@ a{
 /* 링크 텍스트 - a */
 .ip-security a{
   color: #333
+}
+/* IP 보안 */
+.ip-security-toggle{
+  position: relative;
+}
+.ip-security-toggle .checkbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+}
+.ip-security-state{
+  margin-left: 4px;
+  cursor: pointer;
+}
+.ip-security-state,
+.ip-security-state.is-off{
+  color: #999;
+}
+.ip-security-state.is-on, 
+.checkbox:checked + .ip-security-state{
+  color: #03c75a;
 }
 @media screen and (min-width: 769px){
   .brand{
